@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -31,11 +34,15 @@ header {
 .navbar {
   display: flex;
 }
-.navlink {
+.nav-link {
   list-style: none;
   margin-left: 16px;
+  cursor: pointer;
 }
-
+header a {
+  color: #f9faf8;
+  text-decoration: none;
+}
 .first-section {
   padding: 64px 20%;
   display: flex;
@@ -140,7 +147,7 @@ header {
   color: #f9faf8;
   padding: 74px 64px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   border-radius: 20px;
 }
